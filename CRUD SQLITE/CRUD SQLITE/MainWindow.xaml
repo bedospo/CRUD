@@ -1,0 +1,30 @@
+﻿<Window x:Class="CRUD_SQLITE.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_SQLITE"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid>
+		<StackPanel Margin="10">
+			<WrapPanel>
+				<TextBlock Text="peliculafav:"/>
+				<TextBox x:Name="txtpeliculafav" Width="230" Margin="5,0,0,5"/>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock Text="animalfav:"/>
+				<TextBox x:Name="txtanimalfav" Width="230" Margin="12,0,0,5"/>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock Text="colorfav:"/>
+				<TextBox x:Name="txtcolorfav" Width="100" Margin="3,0,0,5"/>
+			</WrapPanel>
+			<WrapPanel>
+				<TextBlock Text="lugarfav:"/>
+				<TextBox x:Name="txtlugarfav" Width="230" Margin="12,0,0,5"/>
+			</WrapPanel>
+			<Button Content="Guardar" x:Name="btnGuardar" Width="70" HorizontalAlignment="Right" Click="btnGuardar_Click"/>
+		</StackPanel>
+	</Grid>
+</Window>
